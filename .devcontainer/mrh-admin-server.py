@@ -51,11 +51,11 @@ class AdminAuthHandler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    if os.getenv("MRH_ADMIN_USERNAME", DEFAULT_ADMIN_USERNAME) == DEFAULT_ADMIN_USERNAME and os.getenv(
-        "MRH_ADMIN_PASSWORD", DEFAULT_ADMIN_PASSWORD
-    ) == DEFAULT_ADMIN_PASSWORD:
+    username = os.getenv("MRH_ADMIN_USERNAME", DEFAULT_ADMIN_USERNAME)
+    password = os.getenv("MRH_ADMIN_PASSWORD", DEFAULT_ADMIN_PASSWORD)
+    if username == DEFAULT_ADMIN_USERNAME or password == DEFAULT_ADMIN_PASSWORD:
         print(
-            "WARNING: Using default admin credentials. Set MRH_ADMIN_USERNAME and MRH_ADMIN_PASSWORD to override.",
+            "WARNING: Default admin credential detected. Set MRH_ADMIN_USERNAME and MRH_ADMIN_PASSWORD to override.",
             file=sys.stderr,
             flush=True,
         )

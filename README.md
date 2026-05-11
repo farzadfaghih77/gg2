@@ -66,6 +66,7 @@
 - Login (Basic Auth):
   - username: `admin`
   - password: `Sample@Sample`
+- ⚠️ Security: change credentials by setting `MRH_ADMIN_USERNAME` and `MRH_ADMIN_PASSWORD`.
 - Copy your generated `vless://` link from the panel
 - UUID is generated automatically per Codespace and shown in the GUI
 
@@ -175,6 +176,7 @@ Click **Sync fork** on your forked repository's page.
 - ورود (Basic Auth):
   - نام کاربری: `admin`
   - رمز عبور: `Sample@Sample`
+- ⚠️ امنیت: برای تغییر مشخصات ورود، متغیرهای `MRH_ADMIN_USERNAME` و `MRH_ADMIN_PASSWORD` را تنظیم کنید.
 - لینک `vless://` تولیدشده را از پنل کپی کنید
 - مقدار UUID به‌صورت خودکار برای هر Codespace ساخته می‌شود و داخل پنل نمایش داده می‌شود
 
